@@ -1,4 +1,4 @@
-import {React, useState, useEffect} from 'react'
+import {React, useState} from 'react'
 import './Footer.scss'
 import {images} from '../../constants';
 import {AppWrap, MotionWrap} from '../../wrapper';
@@ -64,17 +64,18 @@ const handleSubmit = () =>{
               className="p-text"
               placeholder="Your Message"
               value={message}
-              name={message}
+              name="message"
               onChange={handleChangeInput}
             />
           </div>
           <button type="button" className="p-text" onClick={handleSubmit}>{loading ? 'sending': 'Send Message'}
-              Send Message
+              
           </button>
-        </div>
-            : <div>
-              <h3 className="head-text">Thank you for getting in touch</h3>
-            </div>   }     
+          </div>
+              : <div>
+                <h3 className="head-text">Thank you for getting in touch</h3>
+                </div>   
+        }     
 
     </div>
   )
