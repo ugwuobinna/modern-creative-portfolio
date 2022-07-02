@@ -21,6 +21,7 @@ import html from '../assets/html.png'
 import javascript from '../assets/javascript.png'
 import logo from '../assets/logo.png';
 import mobile from '../assets/mobile.png'
+import obinna3 from '../assets/obinna3.png'
 import mu5 from '../assets/mu5.png'
 import nb from '../assets/nb.png'
 import node from '../assets/node.png'
@@ -31,6 +32,7 @@ import redux from '../assets/redux.png'
 import sass from '../assets/sass.png'
 import skype from '../assets/skype.png'
 import spotify from '../assets/spotify.png'
+import profile2 from '../assets/profile2.png'
 import typescript from '../assets/typescript.png'
 import vue from '../assets/vue.png'
 
@@ -61,6 +63,7 @@ export default{
     mu5,
     nb,
     node,
+    obinna3,
     profile,
     python,
     react,
@@ -68,6 +71,7 @@ export default{
     sass,
     skype,
     spotify,
+    profile2,
     typescript,
     vue
 

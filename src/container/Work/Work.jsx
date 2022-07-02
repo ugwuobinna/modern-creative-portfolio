@@ -4,7 +4,7 @@ import { client } from '../../client'
 import './Work.scss'
 import { urlFor } from '../../client'
 import {AiFillEye, AiFillGithub} from 'react-icons/ai'
-import { AppWrap } from '../../wrapper'
+import { AppWrap, MotionWrap } from '../../wrapper'
 
 
 const Work = () => {
@@ -101,4 +101,7 @@ const Work = () => {
   )
 }
 
-export default AppWrap(Work, 'work');
+export default AppWrap(
+  MotionWrap(Work, 'app__work'), 'work',
+  'app__primarybg' 
+  )
