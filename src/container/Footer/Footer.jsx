@@ -17,11 +17,24 @@ const handleChangeInput = (e)=>{
 }
 const handleSubmit = () =>{
   setLoading(true);
+
+  const contact = {
+    _type: 'contact',
+    name: name,
+    email: email,
+    message: message
+  }
+
+  client.create(contact)
+    .then(()=>{
+      setLoading(false)
+      setIsFormSubmitted(true)
+    })
 }
  
 
   return (
-    <div>
+    <div className="app__footer">
       <h2 className='head-text'>Take a moment & chat with me. </h2>
         <div className='app__footer-cards'>
           <div className="app__footer-card">
@@ -37,6 +50,8 @@ const handleSubmit = () =>{
             </a>
           </div>
         </div>
+
+        {!isFormSubmitted ?
         <div className="app__footer-form app__flex">
           <div className="app__flex">
             <input className="p-text" type="text" placeholder="Your Name" name="name" value={name} onChange={handleChangeInput}/>
@@ -57,6 +72,9 @@ const handleSubmit = () =>{
               Send Message
           </button>
         </div>
+            : <div>
+              <h3 className="head-text">Thank you for getting in touch</h3>
+            </div>   }     
 
     </div>
   )
