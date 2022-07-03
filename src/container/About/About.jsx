@@ -30,7 +30,7 @@ const About = () => {
   
   return (
     <>
-    <h2 className='head-text'> I Know that <span>Good design</span> <br/> means <span>Good Business</span> </h2>
+    <h2 className='head-text'> I Make <span>User-Friendly</span> Websites<br/> With Crisp <span>Designs</span> & <span>Incredible UI</span> </h2>
 
       <div className ="app__profiles">
       {abouts.map((about, index)=>{
