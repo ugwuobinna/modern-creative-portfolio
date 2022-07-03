@@ -19,9 +19,8 @@ import git from '../assets/git.png'
 import graphql from '../assets/graphql.png'
 import html from '../assets/html.png'
 import javascript from '../assets/javascript.png'
-import logo from '../assets/logo.png';
+import Logobi from '../assets/Logobi.png';
 import mobile from '../assets/mobile.png'
-import obinna3 from '../assets/obinna3.png'
 import mu5 from '../assets/mu5.png'
 import nb from '../assets/nb.png'
 import node from '../assets/node.png'
@@ -58,12 +57,11 @@ export default{
     graphql,
     html,
     javascript,
-    logo,
+    Logobi,
     mobile,
     mu5,
     nb,
     node,
-    obinna3,
     profile,
     python,
     react,

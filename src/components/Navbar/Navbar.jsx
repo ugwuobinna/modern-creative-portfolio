@@ -9,7 +9,9 @@ const Navbar = () => {
   return (
     <nav className='app__navbar'>
         <div className='app_navbar-logo'>
-            <img src={images.obinna3} alt="Logo"/>
+            {/* <img src='' alt=""/>  I decided to remove the logo because
+            it wasn't looking nice. If you do change your mind, 
+            Please use a simple logo and not your name. */}
         </div>
         <ul className='app__navbar-links'>
             {['home', 'about', 'work', 'skills', 'contact'].map((item)=>{
@@ -25,7 +27,7 @@ const Navbar = () => {
             <HiMenuAlt4 onClick={()=>setToggle(true)}/>
             {toggle && (
                 <motion.div
-                    whileInView={{x: [300, 0] }}
+                    whileInView={{x: [200, 0] }}
                     transition={{duration: 0.85, ease: 'easeOut'}}
                 >
                     <HiX onClick={()=>setToggle(false)}/>

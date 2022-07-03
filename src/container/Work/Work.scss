@@ -121,6 +121,14 @@
             color: var(--white-color)
         }
     }
+    @media screen and (max-width: 450px){
+        &:active{
+            opacity: 1;
+            transition-duration: 0.25;
+            
+        }
+    }
+    
 }
 
 .app__work-content{
