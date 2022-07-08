@@ -64,7 +64,6 @@ const Skills = () => {
                      className="app__skills-exp-work"
                      data-tip
                      data-for={work.name}
-
                      key={work.name}
                   >
                       <h4 className='bold-text'>{work.name}</h4>
@@ -75,7 +74,7 @@ const Skills = () => {
                     effect="solid"
                     arrowColor="#fff"
                     className="skills-tooltip"
-                    disable={true}
+                    
                   >
                       {work.desc}
                   </ReactTooltip>
