@@ -4,7 +4,10 @@ import { client } from '../../client'
 import './Work.scss'
 import { urlFor } from '../../client'
 import {AiFillEye, AiFillGithub} from 'react-icons/ai'
-import { AppWrap, MotionWrap } from '../../wrapper'
+import { AppWrap, MotionWrap } from '../../wrapper';
+import {Splide, SplideSlide} from '@splidejs/react-splide';
+import '@splidejs/splide/dist/css/splide.min.css';
+
 
 
 const Work = () => {
@@ -47,12 +50,43 @@ const Work = () => {
           </div>
         ))}
       </div>
+
       <motion.div
       animate={animateCard}
       transition={{duration: 0.5, delayChildren: 0.5}}
       className="app__work-portfolio">
       
+      <Splide className="splide" options={{
+            type: 'slide',
+            arrows: true,
+            pagination: false,
+            drag: 'free',
+            perPage:3,
+            width: '80vw',
+            autoplay: true,
+            interval: 5000,
+            rewind: true,
+            rewindSpeed: 3000,
+            pauseOnHover: true,
+            padding: { left: 15},
+            gap: '4rem',
+            breakpoints: {
+              1000:{
+                perPage: 2,
+                width: '70vw',
+                gap: '8rem'
+              },
+              700:{
+                destroy: true
+              }
+                
+            },
+            
+            
+        }}>
+
       {filterWork.map((work, index)=>(
+        <SplideSlide key={index}>
         <div className='app__work-item app__flex' key={index}>
           <div className='app__work-img app__flex'>
             <img src={urlFor(work.imgUrl)} alt={work.name}/>
@@ -82,6 +116,7 @@ const Work = () => {
                   <AiFillGithub/>
                 </motion.div>
               </a>
+              
             </motion.div>
             
           </div>
@@ -95,8 +130,9 @@ const Work = () => {
           
           </div>
         </div>
-      ))}
-
+        </SplideSlide>
+        ))}
+        </Splide>
       </motion.div>
     </div>
   )

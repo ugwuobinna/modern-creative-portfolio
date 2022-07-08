@@ -2,10 +2,10 @@ import React from 'react'
 import {BsTwitter, BsLinkedin, BsGithub} from 'react-icons/bs';
 
 
-const SocialMedia = () => {
+const SingleSocial = () => {
   return (
-    <div className="app__social">
-        <div>
+    <div className='socials'>
+      <div>
             <a href="https://twitter.com/Nabi_Thehill"
                target="_blank"
                rel='noreferrer'
@@ -29,8 +29,8 @@ const SocialMedia = () => {
               <BsGithub/>
             </a>
         </div>
-    </div>
+      </div>
   )
 }
 
-export default SocialMedia
+export default SingleSocial
