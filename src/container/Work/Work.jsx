@@ -64,7 +64,7 @@ const Work = () => {
             perPage:3,
             width: '80vw',
             autoplay: true,
-            interval: 5000,
+            interval: 8000,
             rewind: true,
             speed: 7000,
             perMove: 1,
