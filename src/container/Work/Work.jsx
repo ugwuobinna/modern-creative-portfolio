@@ -66,6 +66,8 @@ const Work = () => {
             autoplay: true,
             interval: 5000,
             rewind: true,
+            speed: 7000,
+            perMove: 1,
             rewindSpeed: 8000,
             pauseOnHover: true,
             padding: { left: 15},
