@@ -22,7 +22,7 @@ const SingleSocial = () => {
             </a>
         </div>
         <div>
-            <a href='http://ugwuobinna.netlify.app'
+            <a href='http://www.github.com/ugwuobinna'
                target="_blank"
                rel='noreferrer'
             >
